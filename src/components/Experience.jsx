@@ -24,7 +24,13 @@ export default function Experience({ items = [] }) {
         {items.map((it) => (
           <article key={it.id || it.title} className="experience-item">
             {it.image_url ? (
-              <img src={it.image_url} alt={it.organization || it.title} className="exp-thumb" />
+              <img
+                src={it.image_url}
+                alt={it.organization || it.title}
+                className="exp-thumb"
+                loading="lazy"
+                onError={(e) => { e.currentTarget.style.display = 'none' }}
+              />
             ) : null}
             <div className="exp-body">
               <div className="exp-header">
