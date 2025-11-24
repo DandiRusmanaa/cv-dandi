@@ -19,9 +19,33 @@ Dokumen ini menjelaskan apa saja yang sudah dikerjakan pada tugas Single Page Ap
 - `index.html`, `vite.config.js`
 - `src/main.jsx`, `src/App.jsx`
 - `src/components/*` (Header, About, Skills, Experience, Education, Contact)
+# Ringkasan Pekerjaan — SPA CV menggunakan React + Vite
+
+Dokumen ini menjelaskan perubahan penting pada proyek Single Page Application (CV Mahasiswa) dan bagaimana menjalankan proyek secara lokal.
+
+## Perubahan terbaru (ringkas)
+- Menambahkan entry pengalaman magang: **Telkom Indonesia** (01 Maret 2022 — 01 Juni 2022).
+- Menambahkan/menyimpan logo untuk pengalaman di `public/assets`:
+  - `/assets/telkom.svg` — logo Telkom (placeholder)
+  - `/assets/kri.svg` — logo Kontes Robot Indonesia (placeholder)
+  - `/assets/robot-research-ums.svg` — logo Robot Research UMS (placeholder)
+  - `/assets/kemdikbud.svg` — logo Kemdikbudristek (placeholder)
+- Memperbarui `dataMahasiswa.json` agar setiap entri experience menunjuk ke path `/assets/*.svg`.
+- Memperbarui `src/components/Experience.jsx` untuk menampilkan logo dari `image_url` dengan `loading="lazy"` dan fallback `onError` untuk menyembunyikan gambar bila gagal dimuat.
+
+## Apa yang sudah saya kerjakan (fitur utama)
+- Scaffold project menggunakan Vite + React.
+- Komponen modular: `Header`, `About`, `Skills`, `Experience`, `Education`, `Contact`.
+- Data terpusat di file JSON `dataMahasiswa.json` dan diambil oleh aplikasi.
+- Styling dasar dan print-ready CSS di `src/styles.css`.
+
+## Lokasi file penting
+- `index.html`, `vite.config.js`
+- `src/main.jsx`, `src/App.jsx`
+- `src/components/*` (Header, About, Skills, Experience, Education, Contact)
 - `src/styles.css`
-- `src/assets/foto-dandi.jpg` (foto lokal yang digunakan sebagai fallback)
-- `single-page-application-reactjs-untuk-cv-mahasiswa016-main/dataMahasiswa.json` (file data mahasiswa asli)
+- Data mahasiswa: `single-page-application-reactjs-untuk-cv-mahasiswa-DandiRusmana016-main/dataMahasiswa.json`
+- Logo assets (dipanggil sebagai `/assets/...` di runtime): `public/assets/*.svg`
 
 ## Cara menjalankan (lokal)
 Pastikan Anda berada di folder proyek utama (yang berisi `package.json`). Di PowerShell:
@@ -31,18 +55,4 @@ npm install
 npm run dev
 ```
 
-Lalu buka browser ke URL yang ditunjukkan oleh Vite (mis. `http://localhost:5173`).
-
-Catatan: aplikasi fetch `dataMahasiswa.json` dari folder tugas. Jika Anda memindahkan JSON, perbarui path di `src/App.jsx`.
-
-## Contoh perintah Git (commit & push)
-Jika Anda ingin mengumpulkan tugas ke GitHub:
-
-```powershell
-git add .
-git commit -m "Perbaikan: tampilan Skills & Experience; normalisasi profile; tambah foto lokal"
-git branch -M main
-git remote add origin https://github.com/USERNAME/REPO-NAME.git
-git push -u origin main
-```
-
+Buka browser ke URL yang ditunjukkan Vite (mis. `http://localhost:5173`) dan periksa bagian "Experience" pada CV untuk melihat logo.
