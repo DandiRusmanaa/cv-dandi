@@ -70,10 +70,10 @@
     "experience_type": "event",
     "start_date": "2024-06-01",
     "end_date": "2024-06-05",
-    "is_current": false,
+    "is_current": true,
     "description": "Bertugas sebagai LO yang mendampingi tim peserta, membantu koordinasi teknis acara, serta memastikan kebutuhan peserta dan panitia terpenuhi selama kompetisi berlangsung.",
     "technologies": ["Coordination", "Communication"],
-    "image_url": "/assets/kri.svg"
+    "image_url": "src/assets/logo-kri.jpg"
   },
   {
     "id": 102,
@@ -85,7 +85,7 @@
     "is_current": true,
     "description": "Aktif dalam kegiatan riset robotika, pengembangan hardware, dan implementasi sensor untuk berbagai kebutuhan robot pendidikan dan kompetisi.",
     "technologies": ["Arduino", "Sensor", "Electronics"],
-    "image_url": "/assets/robot-research-ums.svg"
+    "image_url": "src/assets/logo-robot.jpg"
   },
   {
     "id": 103,
@@ -94,10 +94,10 @@
     "experience_type": "project",
     "start_date": "2024-03-01",
     "end_date": "2024-10-01",
-    "is_current": false,
+    "is_current": true,
     "description": "Membuat prototype alat sensor berbasis mikrokontroler yang membantu pelari tunanetra untuk mendeteksi arah lintasan dan rintangan saat berlari.",
     "technologies": ["Arduino", "Ultrasonic Sensor", "Buzzer", "Microcontroller"],
-    "image_url": "/assets/kemdikbud.svg"
+    "image_url": "src/assets/logo-kementrian.jpg"
   }
   ,
   {
@@ -107,10 +107,10 @@
     "experience_type": "internship",
     "start_date": "2022-03-01",
     "end_date": "2022-06-01",
-    "is_current": false,
+    "is_current": true,
     "description": "Magang di Telkom Indonesia, bertugas pada bagian perbaikan jaringan dan menerima serta menindaklanjuti pengaduan maintenance.",
     "technologies": ["Network Maintenance", "Customer Support"],
-    "image_url": "/assets/telkom.svg"
+    "image_url": "src/assets/logo-telkom.jpg"
   }
   ]
 }
