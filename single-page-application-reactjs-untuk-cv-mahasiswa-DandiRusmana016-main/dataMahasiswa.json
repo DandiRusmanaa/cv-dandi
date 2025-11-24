@@ -21,7 +21,7 @@
     "id": 1,
     "name": "Robotik Dasar",
     "category": "technical",
-    "level": "intermediate",
+    "level": "professional",
     "is_main": true,
     "years_of_experience": 2,
     "icon_url": "https://cdn-icons-png.flaticon.com/512/4712/4712027.png"
@@ -39,8 +39,8 @@
     "id": 3,
     "name": "Electronics Prototyping",
     "category": "technical",
-    "level": "intermediate",
-    "is_main": false,
+    "level": "advanced",
+    "is_main": true,
     "icon_url": "https://cdn-icons-png.flaticon.com/512/2830/2830287.png"
   },
   {
@@ -48,7 +48,7 @@
     "name": "Teamwork & Leadership",
     "category": "softskill",
     "level": "advanced",
-    "is_main": false,
+    "is_main": true,
     "icon_url": "https://cdn-icons-png.flaticon.com/512/993/993515.png"
   },
   {
@@ -56,7 +56,7 @@
     "name": "Project Management",
     "category": "softskill",
     "level": "intermediate",
-    "is_main": false,
+    "is_main": true,
     "icon_url": "https://cdn-icons-png.flaticon.com/512/833/833593.png"
   }
   ],
