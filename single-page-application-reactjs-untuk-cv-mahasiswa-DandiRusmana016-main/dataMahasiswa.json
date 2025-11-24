@@ -85,7 +85,7 @@
     "is_current": true,
     "description": "Aktif dalam kegiatan riset robotika, pengembangan hardware, dan implementasi sensor untuk berbagai kebutuhan robot pendidikan dan kompetisi.",
     "technologies": ["Arduino", "Sensor", "Electronics"],
-    "image_url": "https://cdn.example.com/logo/robot-research-ums.png"
+    "image_url": "/assets/robot-research-ums.svg"
   },
   {
     "id": 103,
@@ -97,7 +97,7 @@
     "is_current": false,
     "description": "Membuat prototype alat sensor berbasis mikrokontroler yang membantu pelari tunanetra untuk mendeteksi arah lintasan dan rintangan saat berlari.",
     "technologies": ["Arduino", "Ultrasonic Sensor", "Buzzer", "Microcontroller"],
-    "image_url": "https://cdn.example.com/projects/pkm-tunanetra.png"
+    "image_url": "/assets/kemdikbud.svg"
   }
   ,
   {
