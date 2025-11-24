@@ -55,7 +55,7 @@ export default function App() {
                 <Experience items={data.experiences || data.experience || data.work || []} />
                 <Education items={data.education || []} />
                 <Skills items={data.skills || []} />
-                <Contact contact={data.contact || { email: profile.email, phone: profile.phone, website: profile.website }} />
+                <Contact contact={data.contact || profile} />
               </main>
             </>
           )
