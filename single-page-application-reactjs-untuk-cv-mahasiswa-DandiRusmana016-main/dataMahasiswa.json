@@ -73,7 +73,7 @@
     "is_current": false,
     "description": "Bertugas sebagai LO yang mendampingi tim peserta, membantu koordinasi teknis acara, serta memastikan kebutuhan peserta dan panitia terpenuhi selama kompetisi berlangsung.",
     "technologies": ["Coordination", "Communication"],
-    "image_url": "https://cdn.example.com/event/kri-2024.png"
+    "image_url": "/assets/kri.svg"
   },
   {
     "id": 102,
@@ -98,6 +98,19 @@
     "description": "Membuat prototype alat sensor berbasis mikrokontroler yang membantu pelari tunanetra untuk mendeteksi arah lintasan dan rintangan saat berlari.",
     "technologies": ["Arduino", "Ultrasonic Sensor", "Buzzer", "Microcontroller"],
     "image_url": "https://cdn.example.com/projects/pkm-tunanetra.png"
+  }
+  ,
+  {
+    "id": 104,
+    "title": "Magang - Bagian Perbaikan Jaringan & Penerima Pengaduan Maintenance",
+    "organization": "Telkom Indonesia",
+    "experience_type": "internship",
+    "start_date": "2022-03-01",
+    "end_date": "2022-06-01",
+    "is_current": false,
+    "description": "Magang di Telkom Indonesia, bertugas pada bagian perbaikan jaringan dan menerima serta menindaklanjuti pengaduan maintenance.",
+    "technologies": ["Network Maintenance", "Customer Support"],
+    "image_url": "/assets/telkom.svg"
   }
   ]
 }
