@@ -1,0 +1,49 @@
+# Nama workflow yang akan muncul di tab Actions GitHub
+name: Deploy Vite Project to GitHub Pages
+
+# Kapan workflow akan dijalankan
+on:
+  # Jalankan setiap kali ada push ke branch 'main'
+  push:
+    branches: [main]
+  # Memungkinkan menjalankan workflow secara manual dari tab Actions
+  workflow_dispatch:
+
+# Variabel lingkungan (pastikan ini sesuai dengan konfigurasi Vite Anda)
+env:
+  # Ganti "cv-dandi" jika nama repositori Anda berbeda
+  VITE_BASE_URL: /cv-dandi/
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest  # Gunakan sistem Linux untuk menghindari masalah path Windows
+
+    steps:
+      # Langkah 1: Checkout kode
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Langkah 2: Menyiapkan Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Gunakan versi Node yang kompatibel
+
+      # Langkah 3: Instal dependensi
+      - name: Install dependencies
+        run: npm install
+
+      # Langkah 4: Build proyek Vite
+      - name: Build project
+        run: npm run build
+
+      # Langkah 5: Deployment ke GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist  # Folder output dari vite build
+          publish_branch: gh-pages # Target branch di GitHub
+          # Ganti "dandirusmanaa" dengan username GitHub Anda
+          user_name: 'dandirusmanaa' 
+          user_email: 'dandi.rusmanaa@example.com' # Ganti dengan email Anda
