@@ -85,12 +85,4 @@ Students must deploy their application to one of the following platforms:
 3. The number and quality of commits will affect your grade.  
 4. **Deadline**: Friday, 28 November 2025 at 23.59 WIB  
 
----
-## Example Implementation
-Below is an example implementation of this assignment.
-
-![example screenshot](./example_screenshot.png)
-
----
-
 Good luck and do your best! 🚀

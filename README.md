@@ -82,5 +82,3 @@ Syarat Deployment
 
 ## Contoh Implementasi
 Berikut adalah contoh implementasi tugas ini.
-
-![contoh screenshot](./example_screenshot.png)
